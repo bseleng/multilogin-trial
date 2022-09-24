@@ -2,11 +2,13 @@ export enum fontSizes {
   s = '14px',
   m = '16px',
   l = '20px',
-  xl = '42px',
+  xl = '32px',
+  xxl = '42px',
 }
 
 export enum colors {
   black = '#000000',
+  gray = '#0000001A',
   white = '#FFFFFF',
   blue = '#0066FF',
 }

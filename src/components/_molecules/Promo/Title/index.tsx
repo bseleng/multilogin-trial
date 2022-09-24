@@ -15,7 +15,7 @@ const Title = ({title, subtitle}: IProps) => {
     <>
       <TextDiv
         text={title}
-        fontSize={fontSizes.xl}
+        fontSize={fontSizes.xxl}
         lineHeightPercent={lineHeights.pc99}
 
       />

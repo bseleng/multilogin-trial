@@ -7,6 +7,7 @@ import Adam2 from '../images/Promo/Persons/Adam2.png'
 import CentralLogo from "../components/_molecules/Promo/CentralLogo";
 import Header from "../components/_organisms/Header";
 import Footer from "../components/_organisms/Footer";
+import PrevNextButton from "../components/_atoms/PrevNextButton";
 
 const IndexPage = () => {
   return (
@@ -36,7 +37,11 @@ const IndexPage = () => {
       />
 
       <CentralLogo/>
+      <PrevNextButton
+        direction={'prev'}
+      />
       <Footer/>
+
     </div>
   )
 }
