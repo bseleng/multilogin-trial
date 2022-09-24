@@ -1,7 +1,7 @@
 import React from 'react'
 import TextDiv from "../../../_atoms/TextDiv";
 import {rubikLight, rubikMedium} from "../../../../styles/variables.module.scss";
-import {colors, fontSizes, whitespaces} from "../../../../styles";
+import {colors, fontSizes, lineHeights, whitespaces} from "../../../../styles";
 import {textWrap, wrap} from './styles.module.scss';
 
 interface IProps {
@@ -29,12 +29,12 @@ const PersonCard = ({text, imagePath, photoOnLeft, personInfo, borderColor}: IPr
           text={text}
           fontFamily={rubikLight}
           fontSize={fontSizes.s}
-          lineHeightPercent={165}
+          lineHeightPercent={lineHeights.pc165}
         />
         <TextDiv
           text={personInfo}
           fontFamily={rubikMedium}
-          lineHeightPercent={195}
+          lineHeightPercent={lineHeights.pc195}
           marginTop={whitespaces.px10}
 
         />

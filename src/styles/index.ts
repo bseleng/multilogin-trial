@@ -16,4 +16,13 @@ export enum whitespaces {
   px20 = '20px',
   px25 = '25px',
   px10 = '10px',
+  px6 = '6x',
+}
+
+export enum lineHeights {
+  pc195 = '195%',
+  pc165 = '165%',
+  pc147 = '147%',
+  pc99 = '99%',
+  pc100 = '100%',
 }

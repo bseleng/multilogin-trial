@@ -5,9 +5,18 @@ import HeaderLogo from '../../_atoms/HeaderLogo';
 
 const Header = () => {
   return (
-    <Link to={'/'}>
-      <HeaderLogo/>
-    </Link>
+    <div
+      className={'container'}
+    >
+      <div className={'row'}>
+        <div className={'col'}>
+          <Link to={'/'}>
+            <HeaderLogo/>
+          </Link>
+        </div>
+
+      </div>
+    </div>
   )
 }
 

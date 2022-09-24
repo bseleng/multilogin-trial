@@ -1,6 +1,6 @@
 import React from 'react'
 import TextDiv from '../../../_atoms/TextDiv'
-import {fontSizes} from "../../../../styles";
+import {fontSizes, lineHeights} from "../../../../styles";
 import {rubikLightItalic} from "../../../../styles/variables.module.scss";
 import {subtitleWrap} from "./styles.module.scss";
 
@@ -16,7 +16,7 @@ const Title = ({title, subtitle}: IProps) => {
       <TextDiv
         text={title}
         fontSize={fontSizes.xl}
-        lineHeightPercent={99}
+        lineHeightPercent={lineHeights.pc99}
 
       />
       <div className={`${subtitleWrap}`}>
@@ -24,7 +24,7 @@ const Title = ({title, subtitle}: IProps) => {
           text={subtitle}
           fontSize={fontSizes.l}
           fontFamily={rubikLightItalic}
-          lineHeightPercent={147}
+          lineHeightPercent={lineHeights.pc147}
 
         />
       </div>

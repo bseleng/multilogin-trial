@@ -6,6 +6,7 @@ import Adam1 from '../images/Promo/Persons/Adam1.png'
 import Adam2 from '../images/Promo/Persons/Adam2.png'
 import CentralLogo from "../components/_molecules/Promo/CentralLogo";
 import Header from "../components/_organisms/Header";
+import Footer from "../components/_organisms/Footer";
 
 const IndexPage = () => {
   return (
@@ -35,6 +36,7 @@ const IndexPage = () => {
       />
 
       <CentralLogo/>
+      <Footer/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import {rubikRegular} from '../../../styles/variables.module.scss'
 import React from 'react'
-import {colors, fontSizes, whitespaces} from '../../../styles'
+import {colors, fontSizes, lineHeights, whitespaces} from '../../../styles'
 
 interface IProps {
   text: string
@@ -11,7 +11,7 @@ interface IProps {
   marginLeft?: whitespaces;
   marginRight?: whitespaces;
   fontFamily?: string
-  lineHeightPercent?: number
+  lineHeightPercent?: lineHeights
 }
 
 const TextDiv = ({
@@ -36,7 +36,7 @@ const TextDiv = ({
         marginLeft: marginLeft ? marginLeft : 0,
         marginRight: marginRight ? marginRight : 0,
         fontFamily: fontFamily ? fontFamily : rubikRegular,
-        lineHeight: lineHeightPercent ? lineHeightPercent + '%' :'100%',
+        lineHeight: lineHeightPercent ? lineHeightPercent : lineHeights.pc100,
       }}
       className={`text-start`}
     >
