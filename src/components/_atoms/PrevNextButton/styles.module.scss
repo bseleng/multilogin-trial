@@ -1,3 +1,5 @@
+@import './src/styles/variables.module';
+
 .wrap {
   width: 44px;
   height: 44px;
@@ -8,5 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include phoneLarge {
+    width: 64px;
+    height: 64px;
+  }
+
 }
 

@@ -1,15 +1,41 @@
+@import "./src/styles/variables.module";
+
 .wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 194px;
+
+  @include phoneLarge {
+    width: 100%;
+    img {
+      &:first-of-type {
+        width: 30px;
+      }
+
+      &:last-of-type {
+        width: 120px;
+      }
+      object-fit: scale-down;
+    }
+  }
+
 }
 
 .line {
   margin-right: 35px;
   z-index: 1;
+
+  @include phoneLarge {
+    margin-right: 25px;
+  }
 }
 
 .logo {
-  margin-top: -25px
+  margin-top: -25px;
+
+  @include phoneLarge {
+    margin-top: -15px;
+
+  }
 }

@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import {PersonCardContent} from '../../../../types/Promo';
 import PrevNextButton from '../../../_atoms/PrevNextButton';
 import PersonCard from "../../../_molecules/Promo/PersonCard";
-import {cardsWrap, wrap} from "./styles.module.scss";
-import {whitespaces} from "../../../../styles";
+import {buttonWrap, cardsWrap, mobileButtonsWrap, wrap} from "./styles.module.scss";
 
 interface IProps {
   persons: PersonCardContent []
@@ -26,15 +25,31 @@ const PersonSlider = ({persons}: IProps) => {
     }
   }
 
+  const PrevButton = () => (
+    <PrevNextButton
+      direction={'prev'}
+      onClick={goPrev}
+      isDisabled={noPrev}
+    />
+  )
+
+  const NextButton = () => (
+    <PrevNextButton
+      direction={'next'}
+      onClick={goNext}
+      isDisabled={noNext}
+    />
+  )
+
   return (
     <div className={wrap}>
-      <PrevNextButton
-        direction={'prev'}
-        onClick={goPrev}
-        marginRight={whitespaces.px40}
-        isDisabled={noPrev}
-
-      />
+      <div className={mobileButtonsWrap}>
+        <PrevButton/>
+        <NextButton/>
+      </div>
+      <div className={buttonWrap}>
+        <PrevButton/>
+      </div>
       <div className={cardsWrap}>
         <PersonCard
           content={persons[page]}
@@ -45,18 +60,14 @@ const PersonSlider = ({persons}: IProps) => {
           ? <PersonCard
             content={persons[page + 1]}
             photoOnLeft={false}
-            marginTop={whitespaces.px28}
           />
           : null
         }
 
       </div>
-      <PrevNextButton
-        direction={'next'}
-        onClick={goNext}
-        marginLeft={whitespaces.px40}
-        isDisabled={noNext}
-      />
+      <div className={buttonWrap}>
+        <NextButton/>
+      </div>
     </div>
   )
 }

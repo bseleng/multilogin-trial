@@ -1,13 +1,51 @@
 // font families
-$rubik-regular:  'Rubik-Regular', sans-serif;
+$rubik-regular: 'Rubik-Regular', sans-serif;
 $rubik-italic: 'Rubik-Italic', sans-serif;
 $rubik-light: 'Rubik-Light', sans-serif;
 $rubik-light-italic: 'Rubik-LightItalic', sans-serif;
 $rubik-medium: 'Rubik-Medium', sans-serif;
 $rubik-medium-italic: 'Rubik-MediumItalic', sans-serif;
 
-// colors
+// whitespaces
+$px10: 10px;
+$px15: 15px;
+$px20: 20px;
+$px30: 30px;
+$px40: 40px;
+$px60: 60px;
+$px70: 70px;
+$px80: 80px;
+$px90: 90px;
 
+// breakpoints
+$break-phone-l: 412px;
+$break-tablet-s: 768px;
+$break-tablet-l: 820px;
+$break-desktop: 1420px;
+
+@mixin phoneLarge {
+  @media (max-width: $break-phone-l) {
+    @content;
+  }
+}
+
+@mixin tabletSmall {
+  @media (max-width: $break-tablet-s) {
+    @content;
+  }
+}
+
+@mixin tabletLarge {
+  @media (max-width: $break-tablet-l) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $break-desktop) {
+    @content;
+  }
+}
 
 
 :export {

@@ -1,4 +1,11 @@
+@import "./src/styles/variables.module";
+
 .wrap {
-  margin-top: 27px;
+  margin-top: $px70;
   padding: 67px 43px 158px;
+
+  @include phoneLarge {
+    margin-top: 0;
+    padding: $px20
+  }
 }

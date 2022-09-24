@@ -1,9 +1,46 @@
+@import "./src/styles/variables.module";
+
+
 .wrap {
   display: flex;
   align-items: center;
   min-height: 358px;
+
+  @include phoneLarge {
+    flex-direction: column;
+  }
 }
 
 .cardsWrap {
   align-self: flex-start;
+
+  @include phoneLarge {
+    width: 100%;
+  }
+
+}
+
+.mobileButtonsWrap {
+  display: none;
+
+  @include phoneLarge {
+    display: flex;
+    margin-bottom: $px30;
+    button {
+      &:first-child {
+        margin-right: $px30;
+      }
+
+      &:last-child {
+        margin-left: $px30;
+      }
+    }
+  }
+}
+
+
+.buttonWrap {
+  @include phoneLarge {
+    display: none;
+  }
 }

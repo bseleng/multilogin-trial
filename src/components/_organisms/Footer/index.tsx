@@ -1,7 +1,7 @@
 import {Link} from 'gatsby';
 import React from 'react';
 import TextDiv from '../../_atoms/TextDiv';
-import {colors, lineHeights, whitespaces} from "../../../styles";
+import {colors, lineHeights} from "../../../styles";
 import {rubikLight, rubikMedium} from '../../../styles/variables.module.scss';
 import {wrap} from "./styles.module.scss";
 
@@ -27,7 +27,6 @@ const Footer = () => {
           fontFamily={rubikLight}
           color={colors.white}
           lineHeightPercent={lineHeights.pc195}
-          marginTop={whitespaces.px6}
         />
       </Link>
     </div>

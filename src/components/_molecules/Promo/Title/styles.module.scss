@@ -1,6 +1,14 @@
+@import "./src/styles/variables.module";
+
 .subtitleWrap {
   display: flex;
   align-items: center;
   width: 323px;
   height: 155px;
+
+  @include phoneLarge {
+    height: 115px;
+    margin-bottom: -20px;
+  }
+
 }

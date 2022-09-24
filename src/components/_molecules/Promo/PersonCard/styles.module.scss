@@ -1,3 +1,5 @@
+@import "./src/styles/variables.module";
+
 .wrap {
   width: 522px;
   height: 165px;
@@ -8,9 +10,24 @@
   img {
     width: 194px;
     object-fit: cover;
+
+    @include phoneLarge {
+      width: 154px;
+    }
   }
+
+  @include phoneLarge {
+    width: 100%;
+    height: auto;
+    margin-bottom: $px30;
+  }
+
 }
 
 .textWrap {
-  padding: 23px 25px 12px 31px
+  padding: 23px 25px 12px 31px;
+
+  @include phoneLarge {
+    padding: $px10
+  }
 }
