@@ -11,6 +11,7 @@ interface IProps {
   marginLeft?: whitespaces;
   marginRight?: whitespaces;
   fontFamily?: string
+  lineHeightPercent?: number
 }
 
 const TextDiv = ({
@@ -22,6 +23,7 @@ const TextDiv = ({
                    marginLeft,
                    marginRight,
                    fontFamily,
+                   lineHeightPercent,
                  }: IProps) => {
 
   return (
@@ -33,7 +35,8 @@ const TextDiv = ({
         marginTop: marginTop ? marginTop : 0,
         marginLeft: marginLeft ? marginLeft : 0,
         marginRight: marginRight ? marginRight : 0,
-        fontFamily: fontFamily ? fontFamily : rubikRegular
+        fontFamily: fontFamily ? fontFamily : rubikRegular,
+        lineHeight: lineHeightPercent ? lineHeightPercent + '%' :'100%',
       }}
       className={`text-start`}
     >

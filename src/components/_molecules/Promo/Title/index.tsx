@@ -16,6 +16,7 @@ const Title = ({title, subtitle}: IProps) => {
       <TextDiv
         text={title}
         fontSize={fontSizes.xl}
+        lineHeightPercent={99}
 
       />
       <div className={`${subtitleWrap}`}>
@@ -23,6 +24,7 @@ const Title = ({title, subtitle}: IProps) => {
           text={subtitle}
           fontSize={fontSizes.l}
           fontFamily={rubikLightItalic}
+          lineHeightPercent={147}
 
         />
       </div>
