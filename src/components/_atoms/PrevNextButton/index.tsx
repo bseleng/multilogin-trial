@@ -12,6 +12,7 @@ interface IProps {
   marginTop?: whitespaces;
   marginLeft?: whitespaces;
   marginRight?: whitespaces;
+  isDisabled?: boolean
 }
 
 const PrevNextButton = ({
@@ -22,7 +23,8 @@ const PrevNextButton = ({
                           marginBottom,
                           marginTop,
                           marginLeft,
-                          marginRight
+                          marginRight,
+                          isDisabled
                         }: IProps) => (
   <button
     className={wrap}
@@ -32,6 +34,7 @@ const PrevNextButton = ({
       marginTop: marginTop ? marginTop : 0,
       marginLeft: marginLeft ? marginLeft : 0,
       marginRight: marginRight ? marginRight : 0,
+      cursor: isDisabled ? 'not-allowed' : 'pointer'
     }}
     onClick={onClick}
   >

@@ -17,6 +17,7 @@ export enum whitespaces {
   px40 = '40px',
   px20 = '20px',
   px25 = '25px',
+  px28 = '28px',
   px10 = '10px',
   px6 = '6x',
 }
