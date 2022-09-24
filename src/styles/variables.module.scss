@@ -10,8 +10,6 @@ $rubik-medium-italic: 'Rubik-MediumItalic', sans-serif;
 // breakpoints
 $break-tablet-s: 767px;
 $break-tablet-l: 820px;
-$break-desktop: 1420px;
-
 
 @mixin tabletSmall {
   @media (max-width: $break-tablet-s) {
@@ -21,12 +19,6 @@ $break-desktop: 1420px;
 
 @mixin tabletLarge {
   @media (max-width: $break-tablet-l) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (max-width: $break-desktop) {
     @content;
   }
 }
