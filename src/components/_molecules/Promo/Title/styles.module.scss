@@ -1,5 +1,13 @@
 @import "./src/styles/variables.module";
 
+.wrap {
+  margin-top: 40px;
+
+  @include tabletLarge {
+    margin-top: 0;
+  }
+}
+
 .subtitleWrap {
   display: flex;
   align-items: center;

@@ -15,18 +15,18 @@ const Promo = () => {
 
       <div className={'row'}>
 
-        <div className={'col'}>
+        <div className={'col col-lg-3'}>
           <Title
             title={'Claim the offer'}
             subtitle={'To claim, simply fill in your email below and follow the instructions that appear.'}
           />
         </div>
 
-        <div className={'col'}>
+        <div className={'col col-lg-2'}>
           <CentralLogo/>
         </div>
 
-        <div className={'col'}>
+        <div className={'col col-lg-7'}>
           <PersonSlider
             persons={persons}
           />

@@ -4,18 +4,20 @@
   margin-top: $px70;
   padding: 67px 43px 158px;
 
-  @include phoneLarge {
-    margin-top: 0;
-    padding: $px20
-  }
-
-  @include tabletSmall {
-    margin-top: 0;
-    padding: $px20
-  }
-
   @include tabletLarge {
     margin-top: $px20;
     padding: $px40 $px40 $px150 $px40;
   }
+
+  @include phoneLarge {
+    margin-top: 0;
+    padding: $px20;
+  }
+
+  @include tabletSmall {
+    margin-top: 0;
+    padding: $px20;
+  }
+
+
 }
