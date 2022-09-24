@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "type-styles": "npx typed-scss-modules src"
+    "export-scss": "npx typed-scss-modules src"
   },
   "dependencies": {
     "bootstrap": "^5.2.1",

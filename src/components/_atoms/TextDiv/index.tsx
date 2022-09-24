@@ -1,4 +1,4 @@
-import * as variables from '../../../styles/variables.module.scss'
+import {rubikRegular} from '../../../styles/variables.module.scss'
 import React from 'react'
 import {colors, fontSizes, whitespaces} from '../../../styles'
 
@@ -33,8 +33,9 @@ const TextDiv = ({
         marginTop: marginTop ? marginTop : 0,
         marginLeft: marginLeft ? marginLeft : 0,
         marginRight: marginRight ? marginRight : 0,
-        fontFamily: fontFamily ? fontFamily : variables?.rubikMedium
+        fontFamily: fontFamily ? fontFamily : rubikRegular
       }}
+      className={`text-start`}
     >
       {text}
     </div>

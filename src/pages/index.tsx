@@ -1,14 +1,13 @@
 import * as React from "react"
 import type {HeadFC} from "gatsby"
-import TextDiv from "../components/_atoms/TextDiv";
+import Title from "../components/_molecules/Promo/Title";
 
 const IndexPage = () => {
-  const test = 'test'
-
   return (
     <>
-      <TextDiv
-        text={test}
+      <Title
+        title={'Claim the offer'}
+        subtitle={'To claim, simply fill in your email below and follow the instructions that appear.'}
       />
     </>
   )
