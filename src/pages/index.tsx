@@ -5,10 +5,16 @@ import PersonCard from "../components/_molecules/Promo/PersonCard";
 import Adam1 from '../images/Promo/Persons/Adam1.png'
 import Adam2 from '../images/Promo/Persons/Adam2.png'
 import CentralLogo from "../components/_molecules/Promo/CentralLogo";
+import Header from "../components/_organisms/Header";
 
 const IndexPage = () => {
   return (
-    <>
+    <div className={'container'}>
+      <div className={'row mt-4 mb-4'}>
+        <div className={'column'}>
+          <Header/>
+        </div>
+      </div>
       <Title
         title={'Claim the offer'}
         subtitle={'To claim, simply fill in your email below and follow the instructions that appear.'}
@@ -29,7 +35,7 @@ const IndexPage = () => {
       />
 
       <CentralLogo/>
-    </>
+    </div>
   )
 }
 
