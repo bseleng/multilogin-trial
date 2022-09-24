@@ -6,6 +6,7 @@
   align-items: center;
   width: 194px;
 
+
   @include phoneLarge {
     width: 100%;
     img {
@@ -16,6 +17,38 @@
       &:last-of-type {
         width: 120px;
       }
+
+      object-fit: scale-down;
+    }
+  }
+
+  @include tabletSmall {
+    width: 100%;
+
+    img {
+      &:first-of-type {
+        width: 30px;
+      }
+
+      &:last-of-type {
+        width: 120px;
+      }
+
+      object-fit: scale-down;
+    }
+  }
+
+  @include tabletLarge {
+    margin-top: $px30;
+    img {
+      &:first-of-type {
+        width: 40px;
+      }
+
+      &:last-of-type {
+        width: 150px;
+      }
+
       object-fit: scale-down;
     }
   }
@@ -29,6 +62,15 @@
   @include phoneLarge {
     margin-right: 25px;
   }
+
+  @include tabletSmall {
+    margin-right: 25px;
+  }
+
+  @include tabletLarge {
+    margin-right: 30px;
+
+  }
 }
 
 .logo {
@@ -36,6 +78,13 @@
 
   @include phoneLarge {
     margin-top: -15px;
+  }
 
+  @include tabletSmall {
+    margin-top: -15px;
+  }
+
+  @include tabletLarge {
+    margin-top: -18px;
   }
 }

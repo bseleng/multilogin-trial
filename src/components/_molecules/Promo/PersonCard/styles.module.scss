@@ -14,6 +14,10 @@
     @include phoneLarge {
       width: 154px;
     }
+
+    @include tabletSmall {
+      width: 154px;
+    }
   }
 
   @include phoneLarge {
@@ -22,12 +26,27 @@
     margin-bottom: $px30;
   }
 
+  @include tabletSmall {
+    width: 100%;
+    height: auto;
+    margin-bottom: $px30;
+  }
+
+  @include tabletLarge {
+    margin-bottom: $px30;
+
+  }
+
 }
 
 .textWrap {
   padding: 23px 25px 12px 31px;
 
   @include phoneLarge {
+    padding: $px10
+  }
+
+  @include tabletSmall {
     padding: $px10
   }
 }

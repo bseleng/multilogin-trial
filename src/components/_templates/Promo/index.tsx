@@ -8,7 +8,7 @@ import Footer from "../../_organisms/Footer";
 
 const Promo = () => {
   return (
-    <div className={'container-xl'}>
+    <div className={'container'}>
       <div className={'row mt-4 mb-4'}>
         <Header/>
       </div>
@@ -26,7 +26,7 @@ const Promo = () => {
           <CentralLogo/>
         </div>
 
-        <div className={'col mt-4'}>
+        <div className={'col'}>
           <PersonSlider
             persons={persons}
           />

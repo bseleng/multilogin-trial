@@ -9,6 +9,16 @@
   @include phoneLarge {
     flex-direction: column;
   }
+
+  @include tabletSmall {
+    flex-direction: column;
+  }
+
+  @include tabletLarge {
+    margin-top: $px20;
+    flex: 1;
+    justify-content: space-between;
+  }
 }
 
 .cardsWrap {
@@ -18,7 +28,7 @@
     width: 100%;
   }
 
-}
+  }
 
 .mobileButtonsWrap {
   display: none;
@@ -26,6 +36,22 @@
   @include phoneLarge {
     display: flex;
     margin-bottom: $px30;
+    margin-top: $px30;
+    button {
+      &:first-child {
+        margin-right: $px30;
+      }
+
+      &:last-child {
+        margin-left: $px30;
+      }
+    }
+  }
+
+  @include tabletSmall {
+    display: flex;
+    margin-bottom: $px30;
+    margin-top: $px30;
     button {
       &:first-child {
         margin-right: $px30;
@@ -41,6 +67,10 @@
 
 .buttonWrap {
   @include phoneLarge {
+    display: none;
+  }
+
+  @include tabletSmall {
     display: none;
   }
 }

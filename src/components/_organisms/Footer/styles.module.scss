@@ -8,4 +8,14 @@
     margin-top: 0;
     padding: $px20
   }
+
+  @include tabletSmall {
+    margin-top: 0;
+    padding: $px20
+  }
+
+  @include tabletLarge {
+    margin-top: $px20;
+    padding: $px40 $px40 $px150 $px40;
+  }
 }
