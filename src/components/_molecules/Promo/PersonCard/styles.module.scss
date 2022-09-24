@@ -6,35 +6,26 @@
   border-width: 1px;
   border-style: solid;
   display: flex;
-  margin-bottom: $px30;
+  margin-bottom: 30px;
 
   img {
     width: 194px;
     object-fit: cover;
 
-    @include phoneLarge {
-      width: 154px;
-    }
 
     @include tabletSmall {
       width: 154px;
     }
   }
 
-  @include phoneLarge {
-    width: 100%;
-    height: auto;
-    margin-bottom: $px30;
-  }
-
   @include tabletSmall {
     width: 100%;
     height: auto;
-    margin-bottom: $px30;
+    margin-bottom: 30px;
   }
 
   @include tabletLarge {
-    margin-bottom: $px30;
+    margin-bottom: 30px;
 
   }
 
@@ -43,11 +34,7 @@
 .textWrap {
   padding: 23px 25px 12px 31px;
 
-  @include phoneLarge {
-    padding: $px10
-  }
-
   @include tabletSmall {
-    padding: $px10
+    padding: 10px
   }
 }

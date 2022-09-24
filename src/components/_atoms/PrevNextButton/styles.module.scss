@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
 
-  @include phoneLarge {
+  @include tabletSmall {
     width: 64px;
     height: 64px;
   }

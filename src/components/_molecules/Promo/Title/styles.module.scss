@@ -14,14 +14,9 @@
   width: 323px;
   height: 155px;
 
-  @include phoneLarge {
-    height: 115px;
-    margin-bottom: -20px;
-  }
-
   @include tabletSmall {
     height: 115px;
-    margin-bottom: -20px;
+    margin-bottom: -40px;
   }
 
 }

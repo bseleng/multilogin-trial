@@ -7,21 +7,6 @@
   width: 194px;
   margin-top: 140px;
 
-  @include phoneLarge {
-    width: 100%;
-    img {
-      &:first-of-type {
-        width: 30px;
-      }
-
-      &:last-of-type {
-        width: 120px;
-      }
-
-      object-fit: scale-down;
-    }
-  }
-
   @include tabletSmall {
     width: 100%;
 
@@ -39,7 +24,7 @@
   }
 
   @include tabletLarge {
-    margin-top: $px30;
+    margin-top: 30px;
     img {
       &:first-of-type {
         width: 40px;
@@ -59,10 +44,6 @@
   margin-right: 35px;
   z-index: 1;
 
-  @include phoneLarge {
-    margin-right: 25px;
-  }
-
   @include tabletSmall {
     margin-right: 25px;
   }
@@ -75,10 +56,6 @@
 
 .logo {
   margin-top: -25px;
-
-  @include phoneLarge {
-    margin-top: -15px;
-  }
 
   @include tabletSmall {
     margin-top: -15px;
