@@ -1,0 +1,15 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 194px;
+}
+
+.line {
+  margin-right: 35px;
+  z-index: 1;
+}
+
+.logo {
+  margin-top: -25px
+}

@@ -8,11 +8,11 @@ interface IProps {
   text: string
   personInfo: string
   imagePath: string
-  isOdd: boolean
+  photoOnLeft: boolean
   borderColor?: colors
 }
 
-const PersonCard = ({text, imagePath, isOdd, personInfo, borderColor}: IProps) => {
+const PersonCard = ({text, imagePath, photoOnLeft, personInfo, borderColor}: IProps) => {
   return (
     <div
       className={wrap}
@@ -20,7 +20,7 @@ const PersonCard = ({text, imagePath, isOdd, personInfo, borderColor}: IProps) =
         borderColor: borderColor ? borderColor : colors.black
       }}
     >
-      {isOdd
+      {photoOnLeft
         ? <img src={imagePath} alt={'photo: ' + personInfo}/>
         : null
       }
@@ -40,7 +40,7 @@ const PersonCard = ({text, imagePath, isOdd, personInfo, borderColor}: IProps) =
         />
       </div>
 
-      {!isOdd
+      {!photoOnLeft
         ? <img src={imagePath} alt={'photo: ' + personInfo}/>
         : null
       }
