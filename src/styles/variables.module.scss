@@ -1,0 +1,16 @@
+// font families
+$rubik-regular:  'Rubik-Regular', sans-serif;
+$rubik-italic: 'Rubik-Italic', sans-serif;
+$rubik-light: 'Rubik-Light', sans-serif;
+$rubik-light-italic: 'Rubik-LightItalic', sans-serif;
+$rubik-medium: 'Rubik-Medium', sans-serif;
+$rubik-medium-italic: 'Rubik-MediumItalic', sans-serif;
+
+:export {
+  rubikRegular: $rubik-regular;
+  rubikItalic: $rubik-italic;
+  rubikLight: $rubik-light;
+  rubikLight-italic: $rubik-light-italic;
+  rubikMedium: $rubik-medium;
+  rubikMedium-italic: $rubik-medium-italic;
+}

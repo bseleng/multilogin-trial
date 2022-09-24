@@ -1,42 +1,27 @@
+@import 'variables.module';
 
 .regular {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: $rubik-regular;
 }
 
 .italic {
-  font-family: 'Rubik-Italic', sans-serif;
+  font-family: $rubik-italic;
 }
 
 .light {
-  font-family: 'Rubik-Light', sans-serif;
+  font-family: $rubik-light;
 }
 
 .lightItalic {
-  font-family: 'Rubik-LightItalic', sans-serif;
+  font-family: $rubik-light-italic;
 }
 
 .medium {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: $rubik-medium;
 }
 
 .mediumItalic {
-  font-family: 'Rubik-MediumItalic', sans-serif;
-}
-
-.s {
-  font-size: 14px;
-}
-
-.m {
-  font-size: 16px;
-}
-
-.l {
-  font-size: 20px;
-}
-
-.xl {
-  font-size: 42px;
+  font-family: $rubik-medium-italic;
 }
 
 
